@@ -1,0 +1,264 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f8f8f8;
+
+  }
+  h1{
+    text-align: center;
+    justify-content: center;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    margin: 0;
+    justify-content: center;
+  }
+   /* Navbar styling */
+  .navbar {
+    background-color: black;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    justify-content: center;
+   
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background-color:grey;
+  }
+
+  /* Container to hold your content in a column */
+  .container {
+    max-width: 900px;
+    background: white;
+    padding: 15px 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 900px;
+    margin : 0 auto;
+    border-radius: 8px;
+    justify-content: center;
+   
+    
+  }
+  th, td {
+    border: 1px solid #555;
+    padding: 6px 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  /* Background colors
+  .row-red  { background-color: #f9cbcb; }
+  .row-green{ background-color: #d3e6d3; }
+  .row-yellow{ background-color: #f9edc9; }
+
+  /* Check mark style */
+  .check {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+  }
+  .form-container {
+    /* Flexbox centering */
+    height: 100%;
+    display: flex;
+    justify-content: center;  /* Horizontal center */
+    align-items: center;      /* Vertical center */
+  }
+  form {
+    margin: 15px auto;
+    max-width: 400px;
+    width: 50%;
+    background: white;
+    padding: 20px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    align-items: center;
+  }
+  label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px 6px;
+    margin-top: 6px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .error-message {
+  color: #b00020;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+.error-field {
+  border: 1px solid #b00020;
+  background-color: #fff6f6;
+}
+#successMsg {
+  color: #0b6623;
+  font-weight: 600;
+}
+.row-green { background-color: #d3e6d3; }
+.row-yellow { background-color: #f9edc9; }
+.row-red { background-color: #f9cbcb; }
+
+
+  input[type="submit"] {
+    margin-top: 20px;
+    background-color:black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: gray;
+  }
+  #confirmationMsg {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+#showReportBtn {
+  display: block;            
+  margin: 20px auto;         
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#showReportBtn:hover {
+  background-color: gray;
+}
+
+
+#reportSection, #reportChart {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+tr:hover {
+  cursor: pointer;
+}
+
+/* Highlight effect when hover */
+.highlight {
+  background-color: #e0f7fa !important;
+  cursor: pointer;
+}
+
+/* Info box (modal style) */
+.info-box {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Inner content */
+.info-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 300px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.info-content h3 {
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.info-content p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Close button */
+#closeInfo {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+#highlightBtn, #resetBtn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+#highlightBtn:hover, #resetBtn:hover {
+  background-color: grey;
+}
+@media (max-width: 600px) {
+  table, th, td {
+    font-size: 12px;
+    padding: 4px;
+  }
+  .navbar a {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+
+ 
