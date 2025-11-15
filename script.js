@@ -511,6 +511,58 @@ $(document).ready(function() {
   });
 
 });
+// ==========================
+// 🔍 EXO 7 — SEARCH BY NAME
+// ==========================
+$(document).ready(function() {
+
+  $("#searchInput").on("keyup", function() {
+    const value = $(this).val().toLowerCase();
+
+    $("#attendanceTable tbody tr").filter(function() {
+      const lastName = $(this).children('td').eq(0).text().toLowerCase();
+      const firstName = $(this).children('td').eq(1).text().toLowerCase();
+
+      $(this).toggle(
+        lastName.includes(value) || firstName.includes(value)
+      );
+    });
+  });
+
+  // ======================================
+  // 🔼 Sort by Absences (Ascending)
+  // ======================================
+  $("#sortAbsBtn").click(function() {
+    const rows = $("#attendanceTable tbody tr").get();
+
+    rows.sort(function(a, b) {
+      const absA = parseInt($(a).children("td").eq(14).text());
+      const absB = parseInt($(b).children("td").eq(14).text());
+      return absA - absB;
+    });
+
+    $("#attendanceTable tbody").append(rows);
+    $("#sortMessage").text("Currently sorted by absences (ascending)");
+  });
+
+  // =======================================
+  // 🔽 Sort by Participation (Descending)
+  // =======================================
+  $("#sortPartBtn").click(function() {
+    const rows = $("#attendanceTable tbody tr").get();
+
+    rows.sort(function(a, b) {
+      const partA = parseInt($(a).children("td").eq(15).text());
+      const partB = parseInt($(b).children("td").eq(15).text());
+      return partB - partA; 
+    });
+
+    $("#attendanceTable tbody").append(rows);
+    $("#sortMessage").text("Currently sorted by participation (descending)");
+  });
+
+});
 
 
-})
+
+});
