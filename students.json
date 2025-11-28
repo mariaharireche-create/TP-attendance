@@ -1,0 +1,68 @@
+[
+    {
+        "student_id": "1234",
+        "name": "maria",
+        "group": "4"
+    },
+    {
+        "student_id": "1234",
+        "name": "maria",
+        "group": "4"
+    },
+    {
+        "student_id": "1234",
+        "name": "maria",
+        "group": "4"
+    },
+    {
+        "student_id": "1234",
+        "name": "maria",
+        "group": "4"
+    },
+    {
+        "student_id": "1234",
+        "name": "maria",
+        "group": "4"
+    },
+    {
+        "student_id": "1234",
+        "name": "maria",
+        "group": "4"
+    },
+    {
+        "student_id": "1234",
+        "name": "maria",
+        "group": "4"
+    },
+    {
+        "student_id": "234",
+        "name": "cerine",
+        "group": "2"
+    },
+    {
+        "student_id": "234",
+        "name": "cerine",
+        "group": "2"
+    },
+    {
+        "student_id": "hre",
+        "name": "ven",
+        "group": "rf"
+    },
+    {
+        "student_id": "234",
+        "name": "h",
+        "group": "7",
+        "email": null
+    },
+    {
+        "student_id": "234",
+        "name": "h",
+        "group": "7"
+    },
+    {
+        "student_id": "456",
+        "name": "yasmine",
+        "group": "4"
+    }
+]

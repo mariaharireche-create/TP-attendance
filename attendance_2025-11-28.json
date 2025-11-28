@@ -1,0 +1,54 @@
+[
+    {
+        "student_id": "1234",
+        "status": "present"
+    },
+    {
+        "student_id": "1234",
+        "status": "present"
+    },
+    {
+        "student_id": "1234",
+        "status": "present"
+    },
+    {
+        "student_id": "1234",
+        "status": "present"
+    },
+    {
+        "student_id": "1234",
+        "status": "present"
+    },
+    {
+        "student_id": "1234",
+        "status": "present"
+    },
+    {
+        "student_id": "1234",
+        "status": "present"
+    },
+    {
+        "student_id": "234",
+        "status": "present"
+    },
+    {
+        "student_id": "234",
+        "status": "present"
+    },
+    {
+        "student_id": "hre",
+        "status": "present"
+    },
+    {
+        "student_id": "234",
+        "status": "present"
+    },
+    {
+        "student_id": "234",
+        "status": "present"
+    },
+    {
+        "student_id": "456",
+        "status": "present"
+    }
+]
